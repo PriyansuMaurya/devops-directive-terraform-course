@@ -8,10 +8,18 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-011899242bb902164" # Ubuntu 20.04 LTS // us-east-1
+  count         = var.instance_count
+  ami           = "ami-0ddfba243cbee3768" # Ubuntu 20.04 LTS // us-east-1
   instance_type = "t2.micro"
+}
+
+variable "instance_count" {
+  description = "Number of instances to launch"
+  type        = number
+  default     = 1
+
 }
