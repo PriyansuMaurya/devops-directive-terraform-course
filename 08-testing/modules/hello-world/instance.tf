@@ -1,5 +1,5 @@
 resource "aws_instance" "instance" {
-  ami             = "ami-011899242bb902164" # Ubuntu 20.04 LTS // us-east-1
+  ami             = "ami-0ddfba243cbee3768" # Ubuntu 20.04 LTS // ap-south-1
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.instances.name]
   user_data       = <<-EOF

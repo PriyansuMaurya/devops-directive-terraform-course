@@ -3,7 +3,7 @@
   
 ```
 provider “aws” {
-  region = “us-east-1”
+  region = “ap-south-1”
   assume_role {
     role_arn = “arn:aws:iam::123456789012:role/iac”
   }

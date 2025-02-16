@@ -13,7 +13,7 @@ provider "aws" {
 
 resource "aws_instance" "example" {
   count         = var.instance_count
-  ami           = "ami-0ddfba243cbee3768" # Ubuntu 20.04 LTS // us-east-1
+  ami           = "ami-0ddfba243cbee3768" # Ubuntu 20.04 LTS // ap-south-1
   instance_type = "t2.micro"
 }
 
