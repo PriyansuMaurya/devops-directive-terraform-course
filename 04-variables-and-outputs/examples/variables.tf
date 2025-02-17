@@ -28,3 +28,10 @@ variable "db_pass" {
   type        = string
   sensitive   = true
 }
+
+
+variable "world" {
+  description = "value of the world"
+  type        = string
+  default     = "world"
+}

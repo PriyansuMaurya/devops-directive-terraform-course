@@ -5,7 +5,7 @@ terraform {
   ## TO SWITCH FROM LOCAL BACKEND TO REMOTE AWS BACKEND
   #############################################################
   # backend "s3" {
-  #   bucket         = "devops-directive-tf-state" # REPLACE WITH YOUR BUCKET NAME
+  #   bucket         = "devops-directive-tf-state-pre" # REPLACE WITH YOUR BUCKET NAME
   #   key            = "03-basics/import-bootstrap/terraform.tfstate"
   #   region         = "ap-south-1"
   #   dynamodb_table = "terraform-state-locking"
